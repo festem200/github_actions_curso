@@ -8,6 +8,6 @@ jobs:
       - name: Checkout "clonar el repositorio"
         uses: actions/checkout@v3
       - name: Definir Variable
-        run: echo "USERNAME=${{ github.actor }} >> $GITHUB_ENV
+        run: echo "USERNAME=${{ github.actor }}" >> $GITHUB_ENV
       - name: Correr script
         run: python hola-mundo.py
