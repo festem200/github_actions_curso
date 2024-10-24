@@ -1,13 +1,19 @@
-name: Aprendiendo Github Actions
+name: Aprendiendo triggers
 run-name: Estoy aprendiendo gitHub Actions!!
-on: [push]
+on: 
+  issues:
+    types: [opened]
+  issue_comment:
+    types: [created]
+  schedule:
+    - cron: '1 * * * *'
 jobs:
-  hola-mundo:
+  Vamos-con-python:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout "clonar el repositorio"
+      - name: Checkout
         uses: actions/checkout@v3
-      - name: Definir Variable
-        run: echo "USERNAME=${{ github.actor }}" >> $GITHUB_ENV
-      - name: Correr script
+      - name: Ejecutar Script
         run: python main.py
+      - name: probando
+        run: echo "Vamossss"
