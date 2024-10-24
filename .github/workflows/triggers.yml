@@ -1,12 +1,6 @@
 name: Aprendiendo triggers
 run-name: Estoy aprendiendo gitHub Actions!!
-on: 
-  issues:
-    types: [opened]
-  issue_comment:
-    types: [created]
-  schedule:
-    - cron: '1 * * * *'
+on: [push]
 jobs:
   Vamos-con-python:
     runs-on: ubuntu-latest
