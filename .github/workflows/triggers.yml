@@ -1,6 +1,6 @@
-name: Ejecutando Triggers
-run-name: Tres triggers
-on: 
+name: Triggers
+run-name: ¡Estoy aprendiendo a usar diferentes Triggers!
+on:
   issues:
     types:
       - [opened, labeled]
