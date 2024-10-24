@@ -11,5 +11,3 @@ jobs:
         uses: actions/checkout@v3
       - name: Ejecutar Script
         run: python main.py
-      - name: probando
-        run: echo "Vamossss"
