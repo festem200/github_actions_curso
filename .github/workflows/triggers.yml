@@ -1,12 +1,8 @@
 name: Ejecutando Triggers
 run-name: Tres triggers
 on: 
-  issues:
-    types: [opened]
-  issue_comment:
-    types: [created]
   schedule:
-    - cron: '1 * * * *'
+    - cron:  '1 * * * *'
 jobs:
   Vamos-con-python:
     runs-on: ubuntu-latest
