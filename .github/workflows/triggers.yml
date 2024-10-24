@@ -1,6 +1,8 @@
 name: Aprendiendo triggers
 run-name: Estoy aprendiendo gitHub Actions!!
-on: [push]
+on:
+  issues:
+    types: [opened]
 jobs:
   Vamos-con-python:
     runs-on: ubuntu-latest
